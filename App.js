@@ -2,14 +2,20 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Product from './src/components/Product'
 import CartItem from './src/components/CartItem'
+import Toggler from './src/components/Toggler'
+
+// <View style={styles.container}>
+// <Product name="火腿肠" description="新鲜的鸡蛋" />
+// <CartItem />
+// </View>
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Product name="火腿肠" description="新鲜的鸡蛋" />
-        <CartItem />
+      <View style={{marginTop: 40}}>
+         <Toggler />
       </View>
+     
     );
   }
 }

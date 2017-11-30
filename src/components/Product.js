@@ -6,8 +6,7 @@ class Product extends Component {
     render() {
         return (
             <View style={{
-                flexDirection: 'column',
-                alignItems: 'left',
+                alignItems: 'flex-start',
                 justifyContent: 'flex-start',
                 width: '100%',
                 backgroundColor: 'yellow'
