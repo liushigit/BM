@@ -12,10 +12,9 @@ import Toggler from './src/components/Toggler'
 export default class App extends React.Component {
   render() {
     return (
-      <View style={{marginTop: 40}}>
-         <Toggler />
+      <View style={{ marginTop: 40 }}>
+        <Toggler isEnabled={false} onPress={(isEnabled) => { }} />
       </View>
-     
     );
   }
 }
