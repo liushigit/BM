@@ -1,12 +1,6 @@
 // @flow
 import React, { Component } from 'react'
-import {
-  Text,
-  View,
-  TouchableNativeFeedback,
-  StyleSheet,
-  TouchableWithoutFeedback
-} from 'react-native'
+import { View, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 
 type Props = {
   isEnabled: boolean,
@@ -22,7 +16,7 @@ const styles = StyleSheet.create({
     height: 16,
     borderColor: 'red'
   },
-  isEnabled: {
+  enabled: {
     backgroundColor: 'red'
   }
 })
@@ -53,7 +47,7 @@ export default class Toggler extends Component<Props, Props, any> {
   }
 
   render() {
-    const s = this.state.isEnabled ? [styles.basic, styles.isEnabled] : styles.basic
+    const s = this.state.isEnabled ? [styles.basic, styles.enabled] : styles.basic
 
     return (
       <TouchableWithoutFeedback onPress={this.onPress}>
