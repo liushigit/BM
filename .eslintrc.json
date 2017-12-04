@@ -1,8 +1,21 @@
 {
-  "extends": ["prettier", "react-app"],
-  "plugins": ["prettier"],
+  "extends": [
+    "plugin:flowtype/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "plugins": ["flowtype", "react", "prettier", "standard"],
   "rules": {
     "prettier/prettier": "error",
     "semi": ["error", "never"]
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   }
 }
