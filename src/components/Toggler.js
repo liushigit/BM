@@ -4,7 +4,7 @@ import { View, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 
 type Props = {
   isEnabled: boolean,
-  onPress: (isEnabled: boolean) => void
+  onToggle: (isEnabled: boolean) => void
 }
 
 const styles = StyleSheet.create({
@@ -21,11 +21,11 @@ const styles = StyleSheet.create({
   }
 })
 
-export default class Toggler extends Component<Props, Props, any> {
-  static defaultProps: Object = {
-    isEnabled: false,
-    onPress: undefined
-  }
+export default class Toggler extends Component<Props, any> {
+  // static defaultProps: Object = {
+  //   isEnabled: false,
+  //   onPress: undefined
+  // }
 
   constructor(props: Props) {
     super(props)
@@ -37,8 +37,8 @@ export default class Toggler extends Component<Props, Props, any> {
   onPress = () => {
     const isEnabled = this.state.isEnabled
 
-    if (this.props.onPress !== undefined) {
-      this.props.onPress(!isEnabled)
+    if (this.props.onToggle !== undefined) {
+      this.props.onToggle(!isEnabled)
     }
     // Don't do this!!!
     // this.state.isEnabled = !isEnabled
