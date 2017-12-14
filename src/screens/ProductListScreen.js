@@ -1,4 +1,3 @@
-// @flow
 import React, { Component } from 'react'
 import { Text, View, FlatList } from 'react-native'
 import ProductRow from '../components/ProductRow'

@@ -22,7 +22,7 @@ export default class ProductRow extends Component<Props> {
 
   render() {
     return (
-      <TouchableHighlight onPress={this._onPressItem}>
+      <TouchableHighlight onPress={this._onPressItem} underlayColor={'#ffddee'}>
         <View
           style={{
             height: ROW_HEIGHT,
