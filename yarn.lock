@@ -5200,7 +5200,7 @@ react-native-svg@5.4.2:
     color "^0.11.1"
     lodash "^4.16.6"
 
-react-native-vector-icons@4.4.2:
+react-native-vector-icons@4.4.2, react-native-vector-icons@^4.4.2:
   version "4.4.2"
   resolved "http://registry.npm.taobao.org/react-native-vector-icons/download/react-native-vector-icons-4.4.2.tgz#090f42ee0396c4cc4eae0ddaa518028ba8df40c7"
   dependencies:

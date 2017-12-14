@@ -4,7 +4,7 @@ import { View, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 
 type Props = {
   isEnabled: boolean,
-  onToggle: (isEnabled: boolean) => void
+  onToggle: boolean => void
 }
 
 const styles = StyleSheet.create({
