@@ -6,6 +6,7 @@ import CartItem from './src/components/CartItem'
 import Toggler from './src/components/Toggler'
 import ProductRow from './src/components/ProductRow'
 import ProductListScreen from './src/screens/ProductListScreen'
+import ProductListStack from './src/navigation/ProductListStack'
 
 // <View style={styles.container}>
 // <Product name="火腿肠" description="新鲜的鸡蛋" />
@@ -14,11 +15,7 @@ import ProductListScreen from './src/screens/ProductListScreen'
 
 export default class App extends React.Component<any> {
   render() {
-    return (
-      <View style={{ marginTop: 40 }}>
-        <ProductListScreen />
-      </View>
-    )
+    return <ProductListStack />
   }
 }
 
