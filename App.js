@@ -7,7 +7,7 @@ import Toggler from './src/components/Toggler'
 import ProductRow from './src/components/ProductRow'
 import ProductListScreen from './src/screens/ProductListScreen'
 import ProductListStack from './src/navigation/ProductListStack'
-
+import LongPressButton from './src/components/LongPressButton'
 // <View style={styles.container}>
 // <Product name="火腿肠" description="新鲜的鸡蛋" />
 // <CartItem />
@@ -15,7 +15,11 @@ import ProductListStack from './src/navigation/ProductListStack'
 
 export default class App extends React.Component<any> {
   render() {
-    return <ProductListStack />
+    return (
+      <View style={{ marginVertical: 20 }}>
+        <LongPressButton />
+      </View>
+    )
   }
 }
 
