@@ -8,16 +8,27 @@ import ProductRow from './src/components/ProductRow'
 import ProductListScreen from './src/screens/ProductListScreen'
 import ProductListStack from './src/navigation/ProductListStack'
 import LongPressButton from './src/components/LongPressButton'
-// <View style={styles.container}>
-// <Product name="火腿肠" description="新鲜的鸡蛋" />
-// <CartItem />
-// </View>
 
 export default class App extends React.Component<any> {
   render() {
     return (
-      <View style={{ marginVertical: 20 }}>
-        <LongPressButton />
+      <View
+        style={{
+          backgroundColor: 'red',
+          flex: 1
+        }}
+      >
+        <View style={{ backgroundColor: 'yellow' }}>
+          <Text>Good</Text>
+        </View>
+        <View style={{ backgroundColor: 'cyan' }}>
+          <Text>Ugly</Text>
+        </View>
+        <View style={{ flexGrow: 1, justifyContent: 'flex-end' }}>
+          <View style={{ backgroundColor: 'magenta' }}>
+            <Text>Bad</Text>
+          </View>
+        </View>
       </View>
     )
   }
