@@ -1,5 +1,6 @@
 {
   "extends": [
+    "standard",
     "plugin:flowtype/recommended",
     "plugin:react/recommended",
     "prettier",
@@ -7,11 +8,16 @@
     "prettier/react",
     "prettier/standard"
   ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
   "plugins": ["flowtype", "react", "prettier", "standard"],
   "rules": {
     "prettier/prettier": "error",
     "semi": ["error", "never"]
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
